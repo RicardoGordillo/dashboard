@@ -1,0 +1,33 @@
+import './App.css';
+import { Grid } from '@mui/material';
+
+function App() {
+    return (
+        <Grid container spacing={5} sx={{ justifyContent: 'center', alignItems: 'center' }}>
+
+            {/* Encabezado */}
+            <Grid size={{ xs: 12, md: 12 }}>Elemento: Encabezado</Grid>
+
+            {/* Alertas */}
+            <Grid size={{ xs: 12, md: 12 }}>Elemento: Alertas</Grid>
+
+            {/* Selector */}
+            <Grid size={{ xs: 12, md: 3 }}>Elemento: Selector</Grid>
+
+            {/* Indicadores */}
+            <Grid size={{ xs: 12, md: 9 }}>Elemento: Indicadores</Grid>
+
+            {/* Grafico */}
+            <Grid size={{ xs: 12, md: 6 }} sx={{ display: { xs: 'none' , md: 'block' } }}>Elemento: Grafico</Grid>
+
+            {/* Tabla */}
+            <Grid size={{ xs: 12, md: 6 }} sx={{ display: { xs: 'none' , md: 'block' } }}>Elemento: Tabla</Grid>
+
+            {/* Informacion adicional */}
+            <Grid size={{ xs: 12, md: 12 }}>Elemento: Informacion adicional</Grid>
+
+        </Grid>
+    );
+}
+
+export default App;
